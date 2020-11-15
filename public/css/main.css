@@ -1,0 +1,113 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 5rem 7rem;
+  }
+}
+
+.text-red {
+  color: #C81C1C;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.first_section {
+  position: relative;
+  padding: 5rem 10vw 0;
+  height: 100vh;
+  background-image: url(/images/bg.jpg?13438aa15a14537f561743ce160d7989);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+  .first_section .left,
+  .first_section .right {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.first_section .left {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .first_section .left {
+    text-align: left;
+  }
+}
+
+.first_section .left .logo {
+  width: 80%;
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .first_section .left .logo {
+    width: 50%;
+  }
+}
+
+.first_section .left .name {
+  width: 80%;
+  max-width: 200px;
+  margin: auto;
+}
+
+.first_section .left .name svg:nth-child(1) {
+  width: 100%;
+}
+
+.first_section .left .name svg:nth-child(2) {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .first_section .left .name {
+    width: 100%;
+    margin: 0;
+    max-width: 300px;
+  }
+}
+
+.first_section .human {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 200px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .first_section .human {
+    left: unset;
+    right: 10%;
+    transform: translateX(0);
+    width: 300px;
+  }
+}
+
